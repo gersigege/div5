@@ -20,5 +20,7 @@ from hello.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/',index)
+    path('hello/',index),
+    path('', include ('django.contrib.auth.urls')),
+    path('', include ('members.urls')),
 ]
