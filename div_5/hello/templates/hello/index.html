@@ -1,1 +1,24 @@
 <h1>Hello Gersi</h1>
+
+
+
+
+{% if user.is_authenticated %}
+
+<p>aslkdalksjdasjdkljfljlfakjshfkjashdfkjlashkjhfdhkghdsfkgh</p>
+
+<li>
+    <a href="{% url 'logout' %}" > ik</a>
+</li>
+
+{% else %}
+<p>Ose logohu ose ik pirdhu</p>
+<li>
+    <a href="{% url 'registration' %}" > lalala</a>
+</li>
+
+
+<li>
+    <a href="{% url 'login' %}" > lololo</a>
+</li>
+{% endif %}

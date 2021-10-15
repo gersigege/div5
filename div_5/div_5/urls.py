@@ -20,7 +20,8 @@ from hello.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/',index),
+    path('',include('hello.urls')),
+    path('lalala/',index),
     path('members/', include ('django.contrib.auth.urls')),
     path('members/', include ('members.urls')),
 ]
